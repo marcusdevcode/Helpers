@@ -150,4 +150,8 @@ git push --set-upstream origin main
 git clone https://github.com/interconnectit/Search-Replace-DB.git sar && cd sar && rm -fr ./.git
 php srdb.cli.php -h dbhost -n dbname -u root -p "" -s "search" -r "replace"
 ```
+# Search and delete .DS_Store files:
+```sh
+find . -name '.DS_Store' -type f -delete
+```
 
