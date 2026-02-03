@@ -16,7 +16,7 @@ define('DISABLE_WP_CRON', true);
 if (!empty(env('WP_REDIS_TOKEN',''))) {
 	Config::define('WP_REDIS_CONFIG', [
 		'token' => env('WP_REDIS_TOKEN'),
-		'host' => '127.0.0.1',
+        'host' =>  env('WP_REDIS_HOST'), // '127.0.0.1' by default
 		'port' => env('WP_REDIS_PORT'),
 		'database' => env('WP_REDIS_DATABASE'),
 		'timeout' => 2.5,
