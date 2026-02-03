@@ -155,6 +155,10 @@ php srdb.cli.php -h dbhost -n dbname -u root -p "" -s "search" -r "replace"
 ```sh
 find . -name '.DS_Store' -type f -delete
 ```
+# Search for any file that have php format
+```sh
+find . -type f -name "*.php"
+```
 
 # Reset chmod
 ```sh
